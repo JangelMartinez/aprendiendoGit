@@ -14,9 +14,13 @@ El nombre del directorio creado con la extensión .git es una buena practica par
 
 Con este comando indicamos que la rama principal va ser main.
 
-    NOTA: Este paso no habria que hacerlo en caso de que en la configuración global ya lo has puesto como predeterminado o vayas a utilizar otro nombre de rama diferente a la habitual.
+***
+***NOTA:***
 
-# Clonar el repositorio vacio en una carpeta de trabajo #
+*Este paso no habria que hacerlo en caso de que en la configuración global ya lo has puesto como predeterminado o vayas a utilizar otro nombre de rama diferente a la habitual.*
+***
+
+## Clonar el repositorio vacio en una carpeta de trabajo ##
 
     mkdir proyecto1
     cd proyecto1

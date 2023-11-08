@@ -45,7 +45,11 @@ De esta forma, inicializas un proyecto con git y que tenga la rama inicial "main
 
 En caso de querer cambiar dichos valores para ese proyecto en cuestión, se podrá configurar localmente con los siguientes comandos.
 
-    NOTA: Dichos comandos solo funcionarán cuando estés en la ruta de un proyecto configurado con git.
+***
+***NOTA:***
+
+*Dichos comandos solo funcionarán cuando estés en la ruta de un proyecto configurado con git.*
+***
 
 ## git config --list --local ##
 Visualizas la configuración local git del proyecto. 

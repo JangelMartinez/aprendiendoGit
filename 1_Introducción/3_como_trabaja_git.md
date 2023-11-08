@@ -20,6 +20,11 @@ Al ejecutar "git status" otra vez, podrás ver los ficheros en rojo que no habia
 
 Hasta aquí es el flujo de trabajo de git en local, pero hay un siguiente paso que siempre se suele hacer que es añadirlo a un servidor remoto para tener una copia externa. Esto se realiza mediante el comando "git push". Cuando se utiliza este comando, verificará todos los cambios oficiales que has realizado anteriormente con "git commit" y los subirá al servidor con el que estés trabajando.
 
-    NOTA: Hay que tener en cuenta que tanto "git add", "git commit" y "git push" disponen de parámetros obligados y otros opcionales para poder ejectuarlos.
+***
+***NOTA:*** 
+
+*Hay que tener en cuenta que tanto "git add", "git commit" y "git push" disponen de parámetros obligados y otros opcionales para poder ejectuarlos.*
+
+***
 
 
