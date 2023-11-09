@@ -32,8 +32,14 @@ Git checkout restauraria el fichero del indice.
 
     git revert HEAD
 
+o
+
+    git revert checksum_commit
+
 o 
 
     git reset --hard HEAD^
 
-Cualquiera de los dos comando anteriores sirven para revertir una confirmación.
+
+
+Cualquiera de los comando anteriores sirven para revertir una confirmación.

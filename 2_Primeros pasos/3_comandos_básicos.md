@@ -108,6 +108,10 @@ Si deseas ver la ayuda de cualquier comando en concreto, también lo puedes hace
 
 ## git diff ##
 
+    git diff
+
+El comando general, te indica todas las diferencias que hay en todo el proyecto en este momento con lo confirmado anteriormente.
+
     git diff archivo
     git diff ruta_archivo
 
@@ -116,3 +120,41 @@ Este comando te indica la diferencias que hay en el archivo indicado.
     git diff HEAD
 
 Con la opción "HEAD" te indica las difrencias que hay en la última confirmación (commit).
+
+## git tag ##
+A parte de confirmar los cambios, se pueden añadir etiquetas a esas confirmaciones para indicarle algún aspecto que quieras controlar y despues visualizar. Por ejemplo, puedes indicar las versiones de cada confirmación.
+
+    git tag
+
+El comando general te visualiza todas las etiquetas que tienes en el proyecto en orden alfabetico.
+
+    git tag -l 'patrón'
+
+De esta forma te lista las etiquetas que concuerden con el patrón indicado entre comillas.
+
+    git tag -a my_tag -m 'message'
+
+Este comando te crea una etiqueta anotada y le indicas un mensaje a esa etiqueta. Si no se le incorpora el parámetro "-m" con su mensaje, se abrirá el editor para que lo escribas.
+
+    git tag -a my_tag checksum_commit
+
+Si se te ha olvidado poner alguna etiqueta en alguna confirmación o te has dado cuenta que quieres poner etiquetas en un proyecto ya avanzado, utilizando este comando te permite poner una etiqueta a una confirmación con el checksum correspondiente.
+
+No hace falta porner todo el checksum, con parte de él es suficiente. Por ejemplo, parte del comienzo.
+
+Para ver los checksum de las confirmaciones puedes utilizar "git log" o "git log oneline".
+
+***
+***NOTA***
+
+Las etiquetas no se suben al repositorio remoto por lo que hay que forzarlas para subir.
+
+Puedes ver la opción en el tema 3_Colaboración - 2_ramas
+***
+
+## git checkout ##
+El comando git checkout sirve para varias cosas, entre ellas cambiar de rama de trabajo (eso se ve en el tema 3_Colaboración - 2_ramas) pero en local te puede servir para cambiar entre confirmaciones. Por ejemplo cambiar de una etiqueta a otra.
+
+        get checkout my_tag
+
+Este comando, dentro de la misma rama, te pasa de una confirmación a otra que tenga el nombre de la etiqueta indicada.
