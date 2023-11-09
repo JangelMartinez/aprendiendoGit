@@ -37,3 +37,18 @@ También se tendrá que realizar el comando para cambiar la rama principal.
 
     git symbolic-ref HEAD refs/heads/main
 
+## Clonar un repositorio remoto ##
+Puedes clonar un repositorio remoto siempre y cuando ese repositorio sea público o tengas permisos para hacerlo.
+
+    git clone url
+
+Con este comando, en la ruta (path) de tu sistema local donde lo ejecutes, se creará una carpeta con el nombre del proyecto de la url. 
+
+Además inicializa un directorio .git en su interior con toda la información de ese repositorio y saca una copia de trabajo de la última versión.
+
+Si utilizas el siguiente comando:
+
+    git clone url name_folder
+
+En vez de crear la carpeta con el nombre del proyecto de la url, lo creará en la carpeta con el nombre que le has indicado "name_folder".
+
