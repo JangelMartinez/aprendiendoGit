@@ -158,3 +158,40 @@ El comando git checkout sirve para varias cosas, entre ellas cambiar de rama de 
         get checkout my_tag
 
 Este comando, dentro de la misma rama, te pasa de una confirmación a otra que tenga el nombre de la etiqueta indicada.
+
+## git stash ##
+Si estás a mitad de un trabajo y necesitas cambiar de rama o hacer modificaciones en otro archivo y no quieres confirmar los cambios que tienes a mitad, ejecutas el siguiente comando:
+
+    git stash
+
+Este comando deja en pausa los cambios que estabas realizando y los guarda para poder volver despues a ellos y seguir trabajando.
+
+Lo puedes comprobar realizando un "git status" antes de hacer el "stash" y despues de hacerlo. Comprobaras que antes de hacerlo tienes cambios pendientes y cuando ejecutas el comando "git stash", al volver a ejecutar "git status" ya no tienes nada por confirmar.
+
+Puedes crear tantos "stash" como quieras. Para listarlos se utilizará:
+
+    git stash list
+
+Para volver a un stash guardado:
+
+    git stash apply
+
+De esta forma, pondrá en marcha el "stash" guardado en último lugar.
+
+Si deseas recuperar uno en concreto:
+
+    git stash apply nombre_stash (Ej: stash#{2})
+
+Tanto con "git stash apply" como con "git stash apply nombre_stash" recuperaras la información que estabas modificando anteriormente para seguir trabajando en él.
+
+Si además quieres recuperar los archivos modificados despues del "stash" deberás de ejecutarlo con la opción "--index"
+
+    git stash apply --index
+
+Si deseas borrar un "stash" guardado:
+
+    git stash drop nombre_stash
+
+Si deseas más información al respecto puedes ir a la página oficial de [Git](https://git-scm.com/)
+
+
