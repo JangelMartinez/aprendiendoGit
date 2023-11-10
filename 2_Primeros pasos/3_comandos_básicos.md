@@ -40,9 +40,9 @@ Con el nombre de archivo le indicamos que queremos añadir ese archivo especific
 
 Con el nombre de directorio le indicamos que queremos añadir todos los cambios de ese directorio al "stage".
 
-    git add -a archivo
+    git add -p archivo
 
-Con la opción "-a" y el nombre de archivo, puedes seleccionar que parte modificado del archivo indicado puedes añadirlo al "stage". Si se confirma con el "commit", solo pasará a la nueva versión del fichero la parte seleccionada por el usuario.
+Con la opción "-p" y el nombre de archivo, puedes seleccionar que parte modificado del archivo indicado puedes añadirlo al "stage". Si se confirma con el "commit", solo pasará a la nueva versión del fichero la parte seleccionada por el usuario.
 
     git add -A
 
@@ -77,6 +77,23 @@ Poniendo el nombre del archivo al final hace que se almacene provisionalente y s
 Una vez confirmado los cambios, se creará una versión nueva de dichos cambios, pudiendo volver a la versión anterior en caso de ser necesario.
 
 Los cambios confirmados, desaparecerán del "git status", donde solo aparecerán los cambios que no se habian añadido a la zona "stage" en caso de haberlos. En caso contrario, aparecerá vacío.
+
+### El commit perfecto ###
+Para realizar el commit perfecto hay que tener en cuenta lo siguiente:
+
+1. El asunto (subject). La explicación debe ser corta para dar a entender de que va.
+2. El cuerpo (body), donde se explica más detalladamente los cambios que se han hecho.
+
+Para rellenar el cuerpo y dar una buena explicación se debe contestar a las siguientes preguntas.
+
+- ¿ Qué hay de diferente ahora y no habia antes?
+- ¿ Qué razón ha producido el cambio?
+- ¿ Hay que tener cuidado con algo?
+- ¿ Hay algo especialmente destacable?
+
+Para realizar este commit perfecto, se debe de realizar con "git commit" ya que abre el editor para poder escribir lo que quieras.
+
+Cuando se abre el editor escriba el asunto principal, dé dos satos de línea (return) y escriba los detalles pertientes que respondan a las preguntas antes descritas.
 
 ## git log ##
 
