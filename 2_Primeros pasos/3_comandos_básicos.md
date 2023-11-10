@@ -95,6 +95,15 @@ Para realizar este commit perfecto, se debe de realizar con "git commit" ya que 
 
 Cuando se abre el editor escriba el asunto principal, dé dos satos de línea (return) y escriba los detalles pertientes que respondan a las preguntas antes descritas.
 
+    commit c31c1ede859ce26fb1f59d432e6f295c13550419 (HEAD -> main, origin/main)
+    Author: José Ángel Martínez Socarrades <jangel.martinezs@gmail.com>
+    Date:   Fri Nov 10 06:51:35 2023 +0100
+
+    Fix error in git add and explication of the perfect commit
+    
+    Modificated not correct option -a of "git add", the option correct is -p.
+    Add explication to make the perfect commit.
+
 ## git log ##
 
     git log
