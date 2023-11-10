@@ -17,6 +17,47 @@ Este comando combina el código de una rama/repositorio_remoto con la rama/repos
 
 Combinará el código de la rama actual (activa) con la rama que has indicado (rama_a_combinar)
 
+## git pull ##
+
+    git pull
+
+Recibe la información del repositorio remoto al repositorio local.
+
+Cuando realizas un git pull, internamente realiza los comandos "git fetch" y "git merge" automaticamente.
+
+## git push ##
+
+    git push
+
+Envía la información del repositorio local al repositorio remoto cuando está configurado.
+
+    git push url_remote name_branch
+
+o
+
+    git push name_alias name_branch
+
+Envío la información que hay en la rama "name_branch" al repositorio remoto "url_remote" o la ubicación remota del alias "name_alias" indicado
+
+    git push --set-upstream origin my-branch
+
+o
+
+    git push -u origin my-branch
+
+Si no existe la rama en el repositorio remoto, con esta opción "-u" o "--set-upstream", fuerza y configura las ramas para subirlas al respositorio remoto y poder trabajar con ellas en un futuro más facilmente.
+
+Cuando realizas un git push, internamente realiza los comandos "git fetch" y "git merge" automaticamente.
+
+### Subir etiquetas al repositorio remoto ###
+
+Las etiquetas que pones en las confirmaciones del código, no se añaden al repositorio remoto por lo que hay que forzarls en caso de que quieras subirlas.
+
+    git push origin --tags
+
+Con este comando subes todas las etiquetas que no existen en él. Si quieres solo enviar una, puedes hacerlo de la siguiente forma:
+
+    git push origin my_tag
 
 
 ## git remote ##
